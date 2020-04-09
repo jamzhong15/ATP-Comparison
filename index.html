@@ -2,18 +2,17 @@
 <html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
-    <title>Task Timeline</title>
-    <link rel="stylesheet" href="main.css">
+    <title>ATP Comparison</title>
+    <link rel="stylesheet" href="/static/main.css">
 </head>
 <body>
-    <h1>Task Timeline</h1>
+    <h1>ATP Head2Head</h1>
     <p id="date"></p>
-    <ul>
-      <li class="list">Edit the head</li>
-      <li class="list">Edit the body</li>
-      <li>Link to JavaScript</li>
-    </ul>
-    <script src="app.js"></script>
+    <form id="playerform", method='get'>
+        <input type="text" id="fname" name="fname">
+        <input type="button" value="Submit" onClick="submitForm()">
+      </form>
+    <script src="/static/app.js"></script>
     <noscript>You need to enable JavaScript to view the full site.</noscript>
   </body>
 </html>
