@@ -17,7 +17,7 @@ app.get('/api/players', (req, res) => {
 app.get('/api/players/:id', (req,res) => {
     const player = players.find(c => c.player_slug === req.params.id);
     if(!player) res.status(404).send('player id was not found');
-    res.send(player);
+    res.json(player);
 });
 
 // PORT 

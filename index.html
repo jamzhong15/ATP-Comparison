@@ -2,17 +2,26 @@
 <html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>ATP Comparison</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+    crossorigin="anonymous">
     <link rel="stylesheet" href="/static/main.css">
+
+    <nav class="navbar navbar-dark bg-dark">
+      <h2 class="navbar-brand">ATP Head2Head</h2>
+    </nav>
 </head>
+<br>
 <body>
-    <h1>ATP Head2Head</h1>
-    <p id="date"></p>
-    <form id="playerform", method='get'>
-        <input type="text" id="fname" name="fname">
-        <input type="button" value="Submit" onClick="submitForm()">
-      </form>
+    <form id="playerform" onSubmit="return false;" class="form-inline">
+      <div class="form-group">
+        <input type="text" id="fname" name="fname" class="form-control" placeholder="Enter Player Name">
+      </div>
+      <button class="btn btn-info" onClick="submitForm()">Submit</button>  
+    </form>
+    <p id="playerstat"></p>
     <script src="/static/app.js"></script>
-    <noscript>You need to enable JavaScript to view the full site.</noscript>
-  </body>
+</body>
 </html>
