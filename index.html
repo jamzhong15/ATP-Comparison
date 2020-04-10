@@ -1,27 +1,62 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>ATP Comparison</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
-    crossorigin="anonymous">
-    <link rel="stylesheet" href="/static/main.css">
 
-    <nav class="navbar navbar-dark bg-dark">
-      <h2 class="navbar-brand">ATP Head2Head</h2>
-    </nav>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>ATP Comparison</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="/static/main.css">
+
+  <nav class="navbar navbar-dark bg-dark">
+    <h2 class="navbar-brand">ATP Head2Head</h2>
+  </nav>
 </head>
 <br>
+
 <body>
-    <form id="playerform" onSubmit="return false;" class="form-inline">
-      <div class="form-group">
-        <input type="text" id="fname" name="fname" class="form-control" placeholder="Enter Player Name">
+  <div class="row">
+
+    <div class="col-sm-9">
+      <div class="container-fluid">
+        <div class="jumbotron">
+          <form id="playerform" onSubmit="return false;">
+            <div class="form-row">
+              <div class="col">
+                <input type="text" id="fname" name="fname" class="form-control" placeholder="Enter Player Name">
+              </div>
+              <div class="col">
+                <input type="text" id="fname" name="fname" class="form-control" placeholder="Enter Player Name">
+              </div>
+              <div class="col">
+                <button class="btn btn-info" onClick="submitForm()">Submit</button>
+              </div>
+            </div>
+          </form>
+          <p id="playerstat"></p>
+        </div>
       </div>
-      <button class="btn btn-info" onClick="submitForm()">Submit</button>  
-    </form>
-    <p id="playerstat"></p>
-    <script src="/static/app.js"></script>
+    </div>
+
+    <div class="col-sm-3">
+      <div class="container-fluid">
+        <div class="jumbotron">
+          <li>Federer</li>
+          <li>Dkokovic</li>
+          <li>Murray</li>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  </div>
+
+  </div>
+
+  <script src="/static/app.js"></script>
+
 </body>
+
 </html>
