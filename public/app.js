@@ -9,8 +9,18 @@ function submitForm() {
 }
 
 function changeText(data) {
-    console.log(data);
-    document.getElementById("playerstat").innerHTML=(JSON.stringify(data));
+    console.log(data); 
+    const fname = data.first_name;
+    const lname = data.last_name; 
+    console.log(data.birthdate);
+    document.getElementById("name").innerHTML=(fname + " " + lname);
+    document.getElementById("birthdate").innerHTML=(data.birthdate);
+    document.getElementById("birthplace").innerHTML=(data.birthplace);
+    document.getElementById("height").innerHTML=(data.height_cm);
+    document.getElementById("weight").innerHTML=(data.weight_kg);
+    document.getElementById("handedness").innerHTML=(data.handedness);
+    document.getElementById("backhand").innerHTML=(data.backhand);
+    document.getElementById("turned_pro").innerHTML=(data.turned_pro);
 }
 
 
