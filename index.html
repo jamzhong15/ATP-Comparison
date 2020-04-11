@@ -21,20 +21,24 @@
     <div class="col-sm-9">
       <div class="container-fluid">
         <div class="jumbotron">
+          
           <form id="playerform" onSubmit="return false;">
             <div class="form-row">
               <div class="col">
                 <input type="text" id="fname" name="fname" class="form-control" placeholder="Enter Player Name">
               </div>
+              <span class="input-group-text" style="border-left: 0; border-right: 0;">VS</span>
               <div class="col">
                 <input type="text" id="fname" name="fname" class="form-control" placeholder="Enter Player Name">
               </div>
               <div class="col">
-                <button class="btn btn-info" onClick="submitForm()">Submit</button>
+                <button class="btn btn-info" onClick="submitForm()">Head2Head</button>
               </div>
             </div>
+
+        
+            
           </form>
-          <p id="playerstat"></p>
         </div>
       </div>
     </div>
@@ -45,6 +49,17 @@
           <li>Federer</li>
           <li>Dkokovic</li>
           <li>Murray</li>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-9">
+      <div class="container-fluid">
+        <div class="jumbotron">
+          
+          <p id="playerstat"></p>
+            
+          
         </div>
       </div>
     </div>
