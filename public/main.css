@@ -11,13 +11,3 @@ li {
     font-style: italic;
     font-weight: bold;
   }
-
-  #maxCostSlider {
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.inputItem {
-  padding-left: 2px;
-  padding-right: 2px;
-}

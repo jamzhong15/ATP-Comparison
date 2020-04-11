@@ -13,10 +13,9 @@ function changeText(data) {
     console.log(data);
     const data1 = data.players[0];
     const data2 = data.players[1];
-    const fname = data1.first_name;
-    const lname = data1.last_name; 
+
     console.log(data.birthdate);
-    document.getElementById("name1").innerHTML=(fname + " " + lname);
+    document.getElementById("name1").innerHTML=(data1.first_name + " " + data1.last_name);
     document.getElementById("birthdate1").innerHTML=(data1.birthdate);
     document.getElementById("birthplace1").innerHTML=(data1.birthplace);
     document.getElementById("height1").innerHTML=(data1.height_cm);
@@ -25,6 +24,7 @@ function changeText(data) {
     document.getElementById("backhand1").innerHTML=(data1.backhand);
     document.getElementById("turned_pro1").innerHTML=(data1.turned_pro);
    
+    document.getElementById("name2").innerHTML=(data2.first_name + " " + data2.last_name);
     document.getElementById("birthdate2").innerHTML=(data2.birthdate);
     document.getElementById("birthplace2").innerHTML=(data2.birthplace);
     document.getElementById("height2").innerHTML=(data2.height_cm);
