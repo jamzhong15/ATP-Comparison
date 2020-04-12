@@ -19,12 +19,12 @@ app.get('/api/players/:id', (req,res) => {
     const player1 = players.find(c => c.player_slug === names[0]);
     const player2 = players.find(c => c.player_slug === names[1]);
     var data = {"players":[player1,player2]};
-    console.log(data);
     if(!player1) {
         res.status(404).send('player id was not found');
     }
     res.json(data);
 });
+
 
 // PORT 
 const port = process.env.PORT || 3000;
