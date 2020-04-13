@@ -4,9 +4,14 @@ function submitForm() {
     const input = document.getElementById("playerform");
     let names = input[0].value + "," + input[1].value;
     console.log(names);
-    fetch(`/api/players/${names}`)
-    .then(response => response.json())
-    .then(data => changeText(data));
+
+    fetchPlayers(names);
+}
+
+async function fetchPlayers(names) {
+    const response = await fetch(`/api/players/${names}`);
+    const players = await response.json();
+    changeText(players);
 }
 
 function changeText(data) {
